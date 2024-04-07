@@ -10,10 +10,13 @@
     scrollbar-width: none;  /* Firefox */
   }
 </style>
+
+
+
 <template>
   <div class="flex flex-col bg-yamada justify-center items-center gap-2">
-    <Header />
+    <Header/>
     <Home />
-    <About />
+    <About/>
   </div>
 </template>

@@ -11,7 +11,7 @@ export default {
     methods: {
         deleteWriter() {
             const element = document.getElementById("name");
-            if (!element){
+            if (!element) {
                 console.log("Element not found");
                 return;
             }
@@ -33,7 +33,7 @@ export default {
         },
         typeWriter() {
             const element = document.getElementById("name");
-            if (!element){
+            if (!element) {
                 console.log("Element not found");
                 return;
             }
@@ -55,8 +55,11 @@ export default {
 </script>
 
 <template>
-    <div class="flex flex-col w-full h-dvh bg-yamada justify-center items-center gap-5">
-      <h1 class="text-6xl font-mono font-bold">Sugeng.cpp here !</h1>
-      <h2 id="name" class="text-3xl font-mono">Aka </h2>
-</div>
+    <section id="home">
+        <div class="flex flex-col w-full h-dvh bg-yamada justify-center items-center gap-5">
+            <h1 class="text-6xl font-mono font-bold">Sugeng.cpp here !🍀</h1>
+            <h2 id="name" class="text-3xl font-mono">Aka </h2>
+        </div>
+    </section>
+
 </template>
