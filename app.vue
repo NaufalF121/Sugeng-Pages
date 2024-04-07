@@ -14,9 +14,11 @@
 
 
 <template>
-  <div class="flex flex-col bg-yamada justify-center items-center gap-2">
+  <div class="flex flex-col bg-yamada justify-center items-center">
     <Header/>
     <Home />
     <About/>
+    <Techstack/>
+    <Experiance/>
   </div>
 </template>
