@@ -14,7 +14,7 @@
 
 
 <template>
-  <div class="flex flex-col bg-yamada justify-center items-center">
+  <div class="flex flex-col bg-slate-200 justify-center items-center">
     <Header/>
     <Home />
     <About/>
