@@ -9,6 +9,7 @@ export default {
       'yamada': '#4061A0',
       'hitori': '#EEB8C4',
       'ikuyo': '#D0574E',
+      'yamada-light': '#42cafc',
     }
   },
     
