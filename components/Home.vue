@@ -56,14 +56,19 @@ export default {
 
 <template>
     <section id="home">
-        <div class="bg-slate-200 static">
-            <div class="static flex flex-col w-full h-dvh justify-center items-center gap-5">
-                <h1 class="text-6xl font-mono font-bold">Sugeng.cpp here !🍀</h1>
-                <h2 id="name" class="text-3xl font-mono">Aka </h2>
+        <div class="bg-slate-200 relative w-full h-dvh ">
+            <div class="absolute z-10 items-center inset-x-52 top-20">
+                <div class="w-64 bg-slate-200 h-64 rounded-full bg-yamada-light blur-xl brightness-100"></div>
+            </div>
+            <div class="flex flex-col w-full h-dvh justify-center items-center gap-5 absolute relative">
+                <h1 class="text-6xl font-mono font-bold w-full">Sugeng.cpp here !🍀</h1>
+                <h2 id="name" class="text-3xl font-mono w-full">Aka </h2>
                 <div class="absolute bottom-20 flex flex-row">
                     <a class="text-black">Swipe down</a>
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="h-6 w-6 ml-2">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                        class="h-6 w-6 ml-2">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
                     </svg>
                 </div>
             </div>
