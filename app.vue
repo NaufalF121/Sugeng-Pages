@@ -20,5 +20,6 @@
     <About/>
     <Techstack/>
     <Experiance/>
+    <Footer/>
   </div>
 </template>
