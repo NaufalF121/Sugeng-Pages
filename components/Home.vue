@@ -4,7 +4,7 @@ export default {
         return {
             i: 0,
             j: 0,
-            txt: ["Zwicky", "blueshoko", "Naufal"],
+            txt: ["Software", "Data", "AI"],
             speed: 200,
         };
     },
@@ -27,7 +27,7 @@ export default {
                 } else {
                     this.i++;
                 }
-                element.innerHTML = "Aka ";
+                element.innerHTML = "Interested  in ";
                 setTimeout(this.typeWriter, this.speed);
             }
         },
@@ -69,7 +69,7 @@ export default {
 
             <div class="flex flex-col w-full h-dvh justify-center items-center gap-5 static">
                 <h1 class="text-6xl font-mono font-bold">Sugeng.cpp here !🍀</h1>
-                <h2 id="name" class="text-3xl font-mono ">Aka </h2>
+                <h2 id="name" class="text-3xl font-mono ">Interested in  </h2>
                 <div class="absolute bottom-20 flex flex-row">
                     <a class="text-black">Swipe down</a>
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"
