@@ -14,6 +14,7 @@
         before:h-full
         before:w-full 
         before:opacity-50
+        bg-white
        ">
                     <h1 class="text-2xl font-bold text-gray-800">Internship</h1>
                     <p class="text-gray-800">I've been working as an intern at a company called PT. Surya Teknologi
