@@ -14,6 +14,7 @@
         before:h-full
         before:w-full 
         before:opacity-50
+        bg-white
        ">
                     <h1 class="text-2xl font-bold text-gray-800">Lab assistant software development</h1>
                     <p class="text-sm"> <a class="text-gray-800">Universitas Negeri Surabaya</a> | <a class="text-gray-400">November 2022</a></p>
