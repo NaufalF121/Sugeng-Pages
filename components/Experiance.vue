@@ -15,11 +15,14 @@
         before:w-full 
         before:opacity-50
        ">
-                    <h1 class="text-2xl font-bold text-gray-800">Internship</h1>
-                    <p class="text-gray-800">I've been working as an intern at a company called PT. Surya Teknologi
-                        Nusantara. I've been working on a project called "Sistem Informasi Manajemen" which is a
-                        web-based project. Ask me when you hungry. Hahah hahah ahah ahha haha hahah wuhkjga iaiu ugda
-                        dada.</p>
+                    <h1 class="text-2xl font-bold text-gray-800">Lab assistant software development</h1>
+                    <p class="text-sm"> <a class="text-gray-800">Universitas Negeri Surabaya</a> | <a class="text-gray-400">November 2022</a></p>
+                    <div class="pl-5">
+                        <ul class="list-outside list-disc">
+                            <li>Practicum assistance in Basic Programming</li>
+                            <li>Practicum assistance in Data Structure and Algorithm</li>
+                        </ul>
+                    </div>
                 </div>
                 <div class="relative 
         cursor-pointer
