@@ -4,7 +4,7 @@ export default {
         return {
             i: 0,
             j: 0,
-            txt: ["Software", "Data", "AI"],
+            txt: ["Zwicky", "blueshoko", "Naufal"],
             speed: 200,
         };
     },
@@ -27,7 +27,7 @@ export default {
                 } else {
                     this.i++;
                 }
-                element.innerHTML = "Interested  in ";
+                element.innerHTML = "Aka ";
                 setTimeout(this.typeWriter, this.speed);
             }
         },
@@ -56,20 +56,22 @@ export default {
 
 <template>
     <section id="home">
-        <div class="bg-slate-200 relative w-full h-dvh">
-            <div class="absolute inset-x-64 top-40 ">
+        <div class="bg-slate-200 w-full h-dvh gap-5 relative">
+          <div class="absolute inset-x-24 lg:inset-x-60 w-32 h-32 top-40">
+            <div class="absolute ">
                 <!-- <div class="w-64 bg-slate-200 h-64 rounded-full bg-yamada-light blur-3xl brightness-100 z-0"></div> -->
                 <div class="w-32 h-32 rounded-full bg-gradient-to-bl from-yamada-light to-nijika z-0 p-1 animate-spin">
                     <div class="w-full h-full rounded-full bg-gradient-to-bl from-yamada-light to-nijika"></div>
                 </div>
             </div>
-            <div class="p-1 absolute z-10 inset-x-64 top-40 w-32 h-32 rounded-full">
+            <div class="p-1 absolute z-10 rounded-full">
                 <img src="/about.png" class="w-full h-full rounded-full " />
             </div>
+          </div>
 
             <div class="flex flex-col w-full h-dvh justify-center items-center gap-5 static">
-                <h1 class="text-6xl font-mono font-bold">Sugeng.cpp here !🍀</h1>
-                <h2 id="name" class="text-3xl font-mono ">Interested in  </h2>
+                <h1 class="lg:text-6xl text-3xl font-mono font-bold">Sugeng.cpp here !🍀</h1>
+                <h2 id="name" class="lg:text-3xl text-lg font-mono ">Aka </h2>
                 <div class="absolute bottom-20 flex flex-row">
                     <a class="text-black">Swipe down</a>
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"
