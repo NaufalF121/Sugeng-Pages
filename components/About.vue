@@ -1,6 +1,6 @@
 <template>
     <section class="w-full h-dhv" id="about">
-        <div class=" w-full lg:h-dvh bg-slate-200 justify-center items-center p-10">
+        <div class=" w-full lg:h-dvh bg-slate-200 flex justify-center items-center p-2">
             <div class="flex flex-col lg:flex-row rounded-lg gap-x-24">
                 <img src="/profile.png" alt="Description of image" class="z-20 inset-x-32 lg:ml-32 lg:w-2/4 lg:h-2/4 w-fit" />
                 <div class="flex flex-col justify-center lg:w-1/3 p-5 lg:p-0">

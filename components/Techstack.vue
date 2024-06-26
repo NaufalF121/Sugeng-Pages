@@ -9,8 +9,8 @@ export default {
 
 <template>
     <section id="tech" class="w-full h-dhv">
-        <div class="flex flex-col w-full bg-slate-200 justify-center items-center pt-5 relative">
-            <img src="/about.png" class="w-32 h-32 rounded-md border-8 border-gray-100 absolute inset-x-72 top-12 z-10" />
+        <div class="flex flex-col w-full bg-slate-200 justify-center items-center relative">
+            <!-- <img src="/about.png" class="w-32 h-32 rounded-md border-8 border-gray-100 absolute inset-x-72 top-12 z-10" /> -->
             <div
                 class="bg-gray-100 w-3/4 max-h-fit px-5 py-16 flex flex-col m-2 justify-center relative items-center text-center z-0 rounded-md">
                 <h1 class="text-2xl font-mono text-balance font-medium"> Techstacks</h1>
@@ -18,7 +18,7 @@ export default {
                     <line x1="175" y1="0" x2="325" y2="0" style="stroke:rgb(0,0,0);stroke-width:5" />
                 </svg>
 
-                <div class="w-full mt-5 grid grid-cols-5 row-auto
+                <div class="w-full mt-10 grid grid-cols-5 row-auto
                     px-2 md:columns-3 gap-5
                     md:px-5 lg:columns-4 xl:columns-5 xl:gap-10">
                     <div class="justify-center items-center">
