@@ -1,8 +1,24 @@
 
 
 <script lang="ts">
+import { Swiper, SwiperSlide } from 'swiper/vue';
+import { Navigation, Pagination, Scrollbar, A11y } from 'swiper/modules';
+import 'swiper/css/navigation';
+  import 'swiper/css/pagination';
+  import 'swiper/css/scrollbar';
+// Import Swiper styles
+import 'swiper/css';
 export default {
-    name: 'Fa6BrandsGolang'
+    components: {
+      Swiper,
+      SwiperSlide,
+    },setup() {
+      
+      return {
+      
+        modules: [Pagination],
+      };
+    },
 }
 </script>
 
@@ -11,8 +27,28 @@ export default {
     <section id="tech" class="w-full h-dhv">
         <div class="flex flex-col w-full bg-slate-200 justify-center items-center relative">
             <!-- <img src="/about.png" class="w-32 h-32 rounded-md border-8 border-gray-100 absolute inset-x-72 top-12 z-10" /> -->
+            <swiper
+            class="px-3 py-4 w-64 flex justify-center items-center"
+            :modules="modules" 
+            :pagination="{ clickable: true }"
+    
+  >
+    <swiper-slide>
+        <div class="w-64 h-64 bg-orange-600">Programming language</div>
+    </swiper-slide>
+    <swiper-slide>
+        <div class="w-64 h-64 bg-orange-600">Backend</div>
+    </swiper-slide>
+    <swiper-slide>
+        <div class="w-64 h-64 bg-orange-600">AI dan Data</div>
+    </swiper-slide>
+    <swiper-slide>
+        <div class="w-64 h-64 bg-orange-600">Frontend</div>
+    </swiper-slide>
+    ...
+  </swiper>
             <div
-                class="bg-gray-100 w-3/4 max-h-fit px-5 py-16 flex flex-col m-2 justify-center relative items-center text-center z-0 rounded-md">
+                class="bg-gray-100 bg-clip-padding backdrop-filter backdrop-blur-3xl bg-opacity-30 border border-gray-100 w-3/4 max-h-fit px-5 py-16 flex flex-col m-2 justify-center relative items-center text-center z-0 rounded-lg">
                 <h1 class="text-2xl font-mono text-balance font-medium"> Techstacks</h1>
                 <svg height="10" width="500">
                     <line x1="175" y1="0" x2="325" y2="0" style="stroke:rgb(0,0,0);stroke-width:5" />
@@ -58,7 +94,7 @@ export default {
                     <div class="justify-center items-center">
                         <Icon name="vscode-icons:file-type-mongo" size="100" />
                     </div>
-                    <div class="justify-center items-center"><Icon name="logos:react" size="100" /></div>
+                    <div class="justify-center items-center"><Icon name="uil:react" size="100" /></div>
                     <div class="justify-center items-center" ><Icon name="logos:nodejs" size="100" /></div>
                     <div class="justify-center items-center"><Icon name="logos:vue" size="100" /></div>
                     <div class="justify-center items-center"><Icon name="logos:pytorch-icon" size="100"/></div>
@@ -100,3 +136,4 @@ export default {
 .cls-5 {
     fill: #4dabcf;
 }</style>
+

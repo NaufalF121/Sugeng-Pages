@@ -4,7 +4,7 @@
 
 export default defineNuxtConfig({
   devtools: { enabled: true },
-  modules: ['@nuxtjs/tailwindcss', 'nuxt-icon'], 
+  modules: ['@nuxtjs/tailwindcss', 'nuxt-icon','nuxt-swiper'], 
   tailwindcss: {
     configPath: 'tailwind.config.js',
     exposeConfig: true
@@ -17,4 +17,9 @@ export default defineNuxtConfig({
       },
     ],
   },
+  swiper: {
+    /* module options */
+    modules: ['navigation', 'pagination', 'scrollbar', 'autoplay'],
+    
+  }
 })
