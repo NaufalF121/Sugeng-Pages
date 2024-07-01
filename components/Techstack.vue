@@ -178,6 +178,37 @@ export default {
               </div>
             </div>
           </swiper-slide>
+          <swiper-slide>
+            <div
+              class="bg-slate-200 w-full p-4 flex flex-col justify-items-center items-center"
+            >
+              <div class="w-full m-5 h-full">
+                <a class="text-xl">Others</a>
+                <div
+                  class="flex flex-row flex-wrap lg:gap-10 gap-5 mt-3 items-center justify-center"
+                >
+                  <div class="justify-center items-center">
+                    <Icon name="simple-icons:github" :size="iconSize" />
+                  </div>
+                  <div class="justify-center items-center">
+                    <Icon name="simple-icons:postman" :size="iconSize" />
+                  </div>
+                  <div class="justify-center items-center">
+                    <Icon name="simple-icons:docker" :size="iconSize" />
+                  </div>
+                  <div class="justify-center items-center">
+                    <Icon name="simple-icons:git" :size="iconSize" />
+                  </div>
+                  <div class="justify-center items-center">
+                    <Icon name="simple-icons:amazons3" :size="iconSize" />
+                  </div>
+                  <div class="justify-center items-center">
+                    <Icon name="codicon:azure" :size="iconSize" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </swiper-slide>
           ...
         </swiper>
         <!-- <div class="w-full mt-10 grid grid-cols-5 row-auto
