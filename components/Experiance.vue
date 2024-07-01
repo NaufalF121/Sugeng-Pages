@@ -1,7 +1,7 @@
 <template>
-    <section id="exp" class="">
+    <section id="exp" class="mt-10 p-5">
         <div class="flex flex-col w-full h-auto bg-slate-200 relative justify-center items-center gap-5">
-            <h1 class="text-4xl font-bold text-gray-800">See what i've been doing so far..</h1>
+            <h1 class="lg:text-4xl text-2xl font-bold text-gray-800">See what i've been doing so far..</h1>
             <div class="mx-auto mt-10
                     grid grid-cols-2 row-auto gap-10
                     px-2 md:columns-3
