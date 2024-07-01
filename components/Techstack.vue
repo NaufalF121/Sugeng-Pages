@@ -15,22 +15,38 @@ export default {
   setup() {
     return {
       Title: "<Techstack/>",
-
+      iconSize: "100",
       modules: [Pagination, Autoplay],
     };
+  },
+  mounted() {
+    this.updateIconSize();
+    window.addEventListener('resize', this.updateIconSize);
+  },
+  beforeDestroy() {
+    window.removeEventListener('resize', this.updateIconSize);
+  },
+  methods: {
+    updateIconSize() {
+      if (window.innerWidth < 768) { // Example breakpoint at 768px
+        this.iconSize = "50"; // Smaller size for smaller screens
+      } else {
+        this.iconSize = "100"; // Default size for larger screens
+      }
+    },
   },
 };
 </script>
 
 <template>
-  <section id="tech" class="w-full h-dhv">
+  <section id="tech" class="w-full h-dhv mt-5">
     <div
       class="flex flex-col w-full bg-slate-200 justify-center items-center relative"
     >
       <!-- <img src="/about.png" class="w-32 h-32 rounded-md border-8 border-gray-100 absolute inset-x-72 top-12 z-10" /> -->
 
       <div
-        class="bg-gray-100 bg-clip-padding backdrop-filter backdrop-blur-3xl bg-opacity-30 border border-gray-100 w-3/4 max-h-fit px-5 py-5 flex flex-col m-2 justify-center relative items-center text-center z-0 rounded-lg"
+        class="bg-gray-100 bg-clip-padding backdrop-filter backdrop-blur-3xl bg-opacity-30 border border-gray-100 w-3/4 max-h-dhv px-5 py-5 flex flex-col m-2 justify-center relative items-center text-center z-0 rounded-lg"
       >
         <h1 class="text-2xl font-mono text-balance font-medium">{{ Title }}</h1>
         <svg height="10" width="500">
@@ -43,7 +59,7 @@ export default {
           />
         </svg>
         <swiper
-          class="px-3 py-4 w-full"
+          class="px-3 py-4 w-full max-h-dhv"
           :modules="modules"
           :pagination="{ clickable: true }"
           :autoplay="{ delay: 2000, pauseOnMouseEnter: true }"
@@ -54,27 +70,24 @@ export default {
         >
           <swiper-slide>
             <div
-              class="bg-slate-200 w-full p-4 flex justify-center items-center"
+              class="bg-slate-200 w-full p-4 flex flex-col justify-items-center items-center"
             >
-              <div class="w-full m-5 h-64 border-5">
+              <div class="w-full m-5 h-full">
                 <a class="text-xl">Programming language</a>
                 <div
-                  class="grid grid-cols-5 gap-5 mt-5 h-full items-center place-content-center"
+                  class="flex flex-row flex-wrap lg:gap-10 gap-5 mt-3 items-center justify-center"
                 >
                   <div class="justify-center items-center">
-                    <Icon name="fa6-brands:golang" color="#00ACD7" size="100" />
+                    <Icon :size="iconSize" name="fa6-brands:golang" color="#000000" />
                   </div>
                   <div class="justify-center items-center">
-                    <Icon name="logos:python" size="100" />
+                    <Icon name="fa6-brands:python" :size="iconSize" />
                   </div>
                   <div class="justify-center items-center">
-                    <Icon name="devicon:typescript" size="100" />
+                    <Icon name="devicon-plain:typescript" :size="iconSize" />
                   </div>
                   <div class="justify-center items-center">
-                    <Icon name="logos:postgresql" size="100" />
-                  </div>
-                  <div class="justify-center items-center">
-                    <Icon name="logos:nodejs" size="100" />
+                    <Icon name="mdi:language-cpp" :size="iconSize" />
                   </div>
                 </div>
               </div>
@@ -82,29 +95,93 @@ export default {
           </swiper-slide>
           <swiper-slide>
             <div
-              class="bg-slate-200 w-full p-4 flex justify-center items-center"
+              class="bg-slate-200 w-full p-4 flex flex-col justify-items-center items-center"
             >
-              <div class="w-96 h-64 border-5">Backend</div>
+              <div class="w-full m-5 h-full">
+                <a class="text-xl">Backend</a>
+                <div
+                  class="flex flex-row flex-wrap lg:gap-10 gap-5 mt-3 items-center justify-center"
+                >
+                  <div class="justify-center items-center">
+                    <Icon
+                      name="devicon-plain:nodejs-wordmark"
+                      color="#000000"
+                      :size="iconSize"
+                    />
+                  </div>
+                  <div class="justify-center items-center">
+                    <Icon name="devicon:flask" :size="iconSize"/>
+                  </div>
+                  <div class="justify-center items-center">
+                    <Icon name="cib:go" :size="iconSize" />
+                  </div>
+                  <div class="justify-center items-center">
+                    <Icon name="simple-icons:prisma" :size="iconSize" />
+                  </div>
+                </div>
+              </div>
             </div>
           </swiper-slide>
           <swiper-slide>
             <div
-              class="bg-slate-200 w-full p-4 flex justify-center items-center"
+              class="bg-slate-200 w-full p-4 flex flex-col justify-items-center items-center"
             >
-              <div class="w-96 h-64 border-5">Frontend</div>
+              <div class="w-full m-5 h-full">
+                <a class="text-xl">Frontend</a>
+                <div
+                  class="flex flex-row flex-wrap lg:gap-10 gap-5 mt-3 items-center justify-center"
+                >
+                <div class="justify-center items-center">
+                        <Icon name="uil:react" :size="iconSize" />
+                  </div>
+                  <div class="justify-center items-center">
+                    <Icon name="file-icons:tailwind" :size="iconSize" />
+                  </div>
+                  <div class="justify-center items-center">
+                    <Icon name="simple-icons:nuxtdotjs" :size="iconSize" />
+                  </div>
+                  <div class="justify-center items-center">
+                    <Icon name="teenyicons:nextjs-outline" :size="iconSize" />
+                  </div>
+                </div>
+              </div>
             </div>
           </swiper-slide>
           <swiper-slide>
             <div
-              class="bg-slate-200 w-full p-4 flex justify-center items-center"
+              class="bg-slate-200 w-full p-4 flex flex-col justify-items-center items-center"
             >
-              <div class="w-96 h-64 border-5">AI & Data</div>
+              <div class="w-full m-5 h-full">
+                <a class="text-xl">AI & Data</a>
+                <div
+                  class="flex flex-row flex-wrap lg:gap-10 gap-5 mt-3 items-center justify-center"
+                >
+                  <div class="justify-center items-center">
+                    <Icon name="simple-icons:pytorch" :size="iconSize" />
+                  </div>
+                  <div class="justify-center items-center">
+                    <Icon name="simple-icons:numpy" :size="iconSize" />
+                  </div>
+                  <div class="justify-center items-center">
+                    <Icon name="simple-icons:pandas" :size="iconSize" />
+                  </div>
+                  <div class="justify-center items-center">
+                    <Icon name="devicon-plain:opencv-wordmark" :size="iconSize" />
+                  </div>
+                  <div class="justify-center items-center">
+                    <Icon name="simple-icons:mongodb" :size="iconSize" />
+                  </div>
+                  <div class="justify-center items-center">
+                    <Icon name="simple-icons:postgresql" :size="iconSize" />
+                  </div>
+                </div>
+              </div>
             </div>
           </swiper-slide>
           ...
         </swiper>
         <!-- <div class="w-full mt-10 grid grid-cols-5 row-auto
-                    px-2 md:columns-3 gap-5
+                    px-2 md:columns-3 gap-5 
                     md:px-5 lg:columns-4 xl:columns-5 xl:gap-10">
                     <div class="justify-center items-center">
                         <Icon name="fa6-brands:golang" color="#00ACD7" size="100" />
