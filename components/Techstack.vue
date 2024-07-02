@@ -62,7 +62,7 @@ export default {
           class="px-3 py-4 w-full max-h-dhv"
           :modules="modules"
           :pagination="{ clickable: true }"
-          :autoplay="{ delay: 2000, pauseOnMouseEnter: true }"
+          :autoplay="{ delay: 2000, disableOnInteraction: false }"
           :spaceBetween="30"
           :loop="true"
           :centeredSlides="true"
