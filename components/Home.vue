@@ -72,6 +72,9 @@ export default {
             <div class="flex flex-col w-full justify-center items-center gap-5 static">
                 <h1 class="lg:text-6xl text-3xl font-mono font-bold">Sugeng.cpp here !🍀</h1>
                 <h2 id="name" class="lg:text-3xl text-lg font-mono ">Interested in </h2>
+                <div class="cursor-pointer rounded-lg border-2 border-gray-800 p-1 hover:text-gray-100 hover:bg-gray-800"> 
+                    <a class="font-mono font-bold" href="mailto:blueshoko@gmail.com">Contact Me</a>
+                </div>
                 <div class="absolute bottom-20 flex flex-row">
                     <a class="text-black">Swipe down</a>
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"
