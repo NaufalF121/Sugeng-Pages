@@ -46,7 +46,7 @@ export default {
       <!-- <img src="/about.png" class="w-32 h-32 rounded-md border-8 border-gray-100 absolute inset-x-72 top-12 z-10" /> -->
 
       <div
-        class="bg-gray-100 bg-clip-padding backdrop-filter backdrop-blur-3xl bg-opacity-30 border border-gray-100 w-3/4 max-h-dhv px-5 py-5 flex flex-col m-2 justify-center relative items-center text-center z-0 rounded-lg"
+        class="bg-gray-100 bg-clip-padding backdrop-filter backdrop-blur-3xl bg-opacity-30 border-4 border-gray-800 w-3/4 max-h-dhv px-5 py-5 flex flex-col m-2 justify-center relative items-center text-center z-0 rounded-lg"
       >
         <h1 class="text-2xl font-mono text-balance font-medium">{{ Title }}</h1>
         <svg height="10" width="500">
