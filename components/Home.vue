@@ -4,7 +4,7 @@ export default {
         return {
             i: 0,
             j: 0,
-            txt: ["Zwicky", "blueshoko", "Naufal"],
+            txt: ["Software", "Data", "AI"],
             speed: 200,
         };
     },
@@ -27,7 +27,7 @@ export default {
                 } else {
                     this.i++;
                 }
-                element.innerHTML = "Aka ";
+                element.innerHTML = "Interested in ";
                 setTimeout(this.typeWriter, this.speed);
             }
         },
@@ -56,20 +56,25 @@ export default {
 
 <template>
     <section id="home">
-        <div class="bg-slate-200 relative w-full h-dvh">
-            <div class="absolute inset-x-64 top-40 ">
+        <div class="bg-slate-200 w-full h-dvh relative gap-10 justify-center items-center flex flex-col">
+          <div class="relative w-32 h-32">
+            <div class="absolute ">
                 <!-- <div class="w-64 bg-slate-200 h-64 rounded-full bg-yamada-light blur-3xl brightness-100 z-0"></div> -->
                 <div class="w-32 h-32 rounded-full bg-gradient-to-bl from-yamada-light to-nijika z-0 p-1 animate-spin">
                     <div class="w-full h-full rounded-full bg-gradient-to-bl from-yamada-light to-nijika"></div>
                 </div>
             </div>
-            <div class="p-1 absolute z-10 inset-x-64 top-40 w-32 h-32 rounded-full">
+            <div class="p-1 absolute z-10 rounded-full">
                 <img src="/about.png" class="w-full h-full rounded-full " />
             </div>
+          </div>
 
-            <div class="flex flex-col w-full h-dvh justify-center items-center gap-5 static">
-                <h1 class="text-6xl font-mono font-bold">Sugeng.cpp here !🍀</h1>
-                <h2 id="name" class="text-3xl font-mono ">Aka </h2>
+            <div class="flex flex-col w-full justify-center items-center gap-5 static">
+                <h1 class="lg:text-6xl text-3xl font-mono font-bold">Sugeng.cpp here !🍀</h1>
+                <h2 id="name" class="lg:text-3xl text-lg font-mono ">Interested in </h2>
+                <div class="cursor-pointer rounded-lg border-2 border-gray-800 p-1 hover:text-gray-100 hover:bg-gray-800"> 
+                    <a class="font-mono font-bold" href="mailto:blueshoko@gmail.com">Contact Me</a>
+                </div>
                 <div class="absolute bottom-20 flex flex-row">
                     <a class="text-black">Swipe down</a>
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"
