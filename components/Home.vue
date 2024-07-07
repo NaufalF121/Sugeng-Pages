@@ -65,7 +65,7 @@ export default {
                 </div>
             </div>
             <div class="p-1 absolute z-10 rounded-full">
-                <img src="/about.webp" class="w-full h-full rounded-full " />
+                <NuxtImg src="/about.webp" class="w-full h-full rounded-full" />
             </div>
           </div>
 

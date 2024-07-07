@@ -15,11 +15,9 @@
 
 <template>
   <div class="flex flex-col bg-slate-200 justify-center items-center">
+    
     <Header/>
-    <Home />
-    <About/>
-    <Techstack/>
-    <Experiance/>
+    <NuxtPage :page-key="route => route.fullPath" />
     <Footer/>
   </div>
 </template>

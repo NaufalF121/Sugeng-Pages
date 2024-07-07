@@ -4,7 +4,7 @@
 
 export default defineNuxtConfig({
   devtools: { enabled: true },
-  modules: ['@nuxtjs/tailwindcss', 'nuxt-icon','nuxt-swiper'], 
+  modules: ['@nuxtjs/tailwindcss', 'nuxt-icon','nuxt-swiper','@nuxt/image'], 
   tailwindcss: {
     configPath: 'tailwind.config.js',
     exposeConfig: true
