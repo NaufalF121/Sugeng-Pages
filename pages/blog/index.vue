@@ -17,3 +17,6 @@
         </ContentList>
     </main>
 </template>
+<script>
+import 'primeicons/primeicons.css'
+</script>
