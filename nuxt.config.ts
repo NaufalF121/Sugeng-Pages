@@ -1,10 +1,22 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
-
+import Aura from '@primevue/themes/aura';
 
 
 export default defineNuxtConfig({
   devtools: { enabled: true },
-  modules: ['@nuxtjs/tailwindcss', 'nuxt-icon','nuxt-swiper','@nuxt/image'], 
+  modules: [
+    '@nuxtjs/tailwindcss',
+    'nuxt-icon',
+    'nuxt-swiper',
+    '@nuxt/image',
+    "@nuxt/content",
+    'nuxt-primevue'
+  ], 
+  primevue: {
+    options: {
+      unstyled: true
+    },
+},
   tailwindcss: {
     configPath: 'tailwind.config.js',
     exposeConfig: true
