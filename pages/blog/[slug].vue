@@ -3,6 +3,7 @@ const { slug } = useRoute().params;
 </script>
 
 <template>
+  
   <article class="bg-transparent rounded-2xl h-dvh">
     <ContentDoc :path="`/blog/${slug}`" v-slot="{ doc }">
       <!-- Header  -->
@@ -12,8 +13,8 @@ const { slug } = useRoute().params;
           <p class="text-gray-500 text-sm mt-2">{{ doc.date }}</p>
         </div>
         <img
-          v-if="doc.thumbnail"
-          :src="doc.thumbnail"
+          v-if="doc.thumb"
+          :src="doc.thumb"
           :alt="doc.title"
           class="w-full"
         />

@@ -1,5 +1,5 @@
 <template>
-    <div class="flex flex-row w-full h-14 sticky top-0 bg-transparent items-center pl-5 justify-center pr-5 lg:gap-10 gap-5 z-50">
+    <div class="flex flex-row w-full h-14 top-0 bg-transparent items-center pl-5 justify-center pr-5 lg:gap-10 gap-5 z-50">
         <div class="pr-2 pl-2 rounded-md bg-transparent hover:opacity-50">
             <a href="#home" class="text-black font-mono">Home</a>
         </div>

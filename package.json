@@ -15,13 +15,12 @@
     "nuxt": "^3.11.2",
     "nuxt-primevue": "^3.0.0",
     "nuxt-swiper": "^1.2.2",
-    "primeicons": "^7.0.0",
+    "primevue": "^4.0.0",
     "vue": "^3.4.21",
     "vue-router": "^4.3.0"
   },
   "devDependencies": {
     "@nuxtjs/tailwindcss": "^6.11.4",
-    "@primevue/nuxt-module": "^4.0.0",
     "autoprefixer": "^10.4.19",
     "nuxt-icon": "^0.6.10",
     "postcss": "^8.4.39",

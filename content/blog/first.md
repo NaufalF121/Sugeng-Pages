@@ -3,6 +3,7 @@ title: 'Title of the page'
 description: 'meta description of the page'
 date: '12/07/2024'
 slug: 'first'
+thumb: '/blog/first/thumb.jpeg'
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed lectus in lacus semper tincidunt. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Duis suscipit tincidunt urna non lacinia. Vestibulum a pharetra velit. Pellentesque tempor nunc eu justo sodales, ac commodo elit sagittis. Pellentesque augue dui, sagittis vel diam id, varius tincidunt nulla. Sed placerat orci eu urna imperdiet consectetur. Aenean quis ullamcorper odio, viverra posuere tellus. Suspendisse potenti. Etiam malesuada fringilla ante id luctus. Fusce sagittis leo vitae ullamcorper auctor. Nulla posuere ex id eleifend congue. Etiam interdum sagittis felis ac blandit.
