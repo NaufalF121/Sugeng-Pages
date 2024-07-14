@@ -1,6 +1,6 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 
-import path from 'path';
+
 
 
 export default defineNuxtConfig({
@@ -12,18 +12,9 @@ export default defineNuxtConfig({
     'nuxt-swiper',
     '@nuxt/image',
     "@nuxt/content",
+    '@primevue/nuxt-module'
     
   ],
-
-  primevue: {
-    options: {
-      unstyled: true,
-    },
-    
-    
-    importPT: { as: 'Wind', from: path.resolve(__dirname, './presets/wind/') },
-    //import and apply preset   
-  },
 
   tailwindcss: {
     configPath: 'tailwind.config.js',
