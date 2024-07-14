@@ -6,7 +6,7 @@
             <h1 class="text-4xl font-bold text-center mb-5">Personal blog</h1>
             <IconField class="w-2/3 mr-1 rounded-md h-8 bg-white my-10">
                <InputIcon icon="pi pi-search" class="h-full" />
-                <InputText placeholder=" Search" class="h-full ml-2" v-model="search" />
+                <InputText placeholder=" Search" class="h-full w-full ml-2" v-model="search" />
             </IconField>
             <div class="w-full h-8 rounded-md flex flex-col items-center" v-if="search != ''">
                 <p class="text-gray-500 text-center">
