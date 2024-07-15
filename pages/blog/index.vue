@@ -35,7 +35,7 @@
                         class="bg-white hover:shadow-md p-4 w-full rounded-md flex flex-row">
                         <div class="mr-2 gap-2 w-2/3">
                             <h2 class="text-xl font-bold">{{ blog.title }}</h2>
-                            <p class="text-gray-500">{{ blog.description }}</p>
+                            <p class="text-gray-500 line-clamp-3 lg:line-clamp-5">{{ blog.description }}</p>
                             <p class="text-gray-500">{{ blog.date }}</p>
                             <NuxtLink :to="`/blog/${blog.slug}`" class="text-blue-500">Read more</NuxtLink>
                         </div>
