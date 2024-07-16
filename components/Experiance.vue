@@ -7,7 +7,7 @@
         See what i've been doing so far..
       </h1>
       <div
-        class="mx-auto mt-10 grid grid-cols-2 row-auto gap-10 px-2 md:columns-3 md:px-5 lg:columns-2 mb-10 lg:px-10"
+        class="mx-auto mt-10 grid grid-cols-1 lg:grid-cols-2 row-auto gap-10 px-2 md:columns-3 md:px-5 lg:columns-2 mb-10 lg:px-10"
       >
         <div
           class="relative cursor-pointer p-4 before:absolute before:z-10 before:h-full before:w-full before:opacity-50 bg-gray-100 hover:shadow-lg rounded-lg"
