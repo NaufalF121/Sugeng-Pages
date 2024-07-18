@@ -75,6 +75,7 @@ export default {
                 <div class="cursor-pointer rounded-lg border-2 border-gray-800 p-1 hover:text-gray-100 hover:bg-gray-800"> 
                     <a class="font-mono font-bold" href="mailto:blueshoko@gmail.com">Contact Me</a>
                 </div>
+                
                 <div class="absolute bottom-20 flex flex-row">
                     <a class="text-black">Swipe down</a>
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"
