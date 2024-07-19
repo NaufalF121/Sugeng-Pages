@@ -6,6 +6,7 @@ export default {
             j: 0,
             txt: ["Software", "Data", "AI"],
             speed: 200,
+            color: ["bg-clip-text text-transparent bg-gradient-to-bl from-yamada-light to-nijika ", "bg-clip-text text-transparent bg-gradient-to-bl from-ikuyo to-hitori", "bg-gradient-to-bl from-hitori to-yamada-light bg-clip-text text-transparent"],
         };
     },
     methods: {
@@ -27,7 +28,7 @@ export default {
                 } else {
                     this.i++;
                 }
-                element.innerHTML = "Interested in ";
+                
                 setTimeout(this.typeWriter, this.speed);
             }
         },
@@ -41,6 +42,7 @@ export default {
                 element.innerHTML += this.txt[this.i].charAt(
                     this.j
                 );
+                element.className = this.color[this.i];
                 this.j++;
                 setTimeout(this.typeWriter, this.speed);
             } else {
@@ -71,7 +73,7 @@ export default {
 
             <div class="flex flex-col w-full justify-center items-center gap-5 static">
                 <h1 class="lg:text-6xl text-3xl font-mono font-bold">Sugeng.cpp here !🍀</h1>
-                <h2 id="name" class="lg:text-3xl text-lg font-mono ">Interested in </h2>
+                <h2 class="lg:text-3xl text-lg font-mono ">Interested in <span id="name"></span></h2>
                 <div class="cursor-pointer rounded-lg border-2 border-gray-800 p-1 hover:text-gray-100 hover:bg-gray-800"> 
                     <a class="font-mono font-bold" href="mailto:blueshoko@gmail.com">Contact Me</a>
                 </div>

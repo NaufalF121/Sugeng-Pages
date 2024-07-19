@@ -14,6 +14,10 @@
 
 
 <template>
+  <Head>
+      <Title>{{ "Naufal Farras Pratama" }}</Title>
+      <Meta name="description" :content="'This Website telling about myself as programmer'" />
+  </Head>
   <div class="flex flex-col bg-slate-200 justify-center items-center">
     
     <Header/>
