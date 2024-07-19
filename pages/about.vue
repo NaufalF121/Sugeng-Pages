@@ -70,7 +70,7 @@ export default {
   methods: {
     updateIconSize() {
       if (window.innerWidth < 768) { // Example breakpoint at 768px
-        this.iconSize = "50"; // Smaller size for smaller screens
+        this.iconSize = "80"; // Smaller size for smaller screens
       } else {
         this.iconSize = "100"; // Default size for larger screens
       }
