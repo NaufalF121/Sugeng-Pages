@@ -18,7 +18,7 @@ const { slug } = useRoute().params;
             :placeholder="[128, 128, 10, 5]"
             :alt="doc.title"
             height="450"
-            class="object-cover rounded-xl"
+            class="object-cover"
           />
         </div>
      
