@@ -1,5 +1,5 @@
 ---
-title: 'Title of the page'
+title: 'My journey to become skibidi'
 description: 'meta description of the page'
 date: '12/07/2024'
 slug: 'first'
