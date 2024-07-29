@@ -1,3 +1,5 @@
+
+
 <template>
   <section id="exp" class="mt-10 p-5">
     <div
@@ -12,14 +14,14 @@
         <div
           class="relative cursor-pointer p-4 before:absolute before:z-10 before:h-full before:w-full before:opacity-50 bg-gray-100 hover:shadow-lg rounded-lg"
         >
-          <h1 class="text-2xl font-bold text-gray-800">
+          <NuxtLink to="https://github.com/NaufalF121/PeminjamanLab" class="text-2xl font-bold text-gray-800">
             License Plate Vehicle OCR
-          </h1>
+          </NuxtLink>
           <p class="text-sm">
             <a class="text-gray-800">Self project</a> |
             <a class="text-gray-400">Juny 2022</a>
           </p>
-          <p class="text-gray-800 text-justify mt-3"> 
+          <p  class="text-gray-800 text-justify mt-3"> 
             Me and my team are working on a project called "License Plate Vehicle OCR" which is a project for our Satria Data competition. 
             This project is about recognizing the license plate of a vehicle in Indonesia using OCR technology, Our Score get 97% Accuracy.
           </p>
@@ -27,7 +29,7 @@
         <div
           class="relative cursor-pointer p-4 before:absolute before:z-10 before:h-full before:w-full before:opacity-50 bg-gray-100 hover:shadow-lg rounded-lg"
         >
-          <h1 class="text-2xl font-bold text-gray-800">Management Lab WebApp</h1>
+          <NuxtLink to="https://github.com/NaufalF121/satria_data"class="text-2xl font-bold text-gray-800">Management Lab WebApp</NuxtLink>
           <p class="text-sm">
             <a class="text-gray-800">Self project</a> |
             <a class="text-gray-400">November 2023</a>
@@ -35,7 +37,7 @@
           <p class="text-gray-800 text-justify mt-3"> 
             Me and my team are working on a project called "Management Lab WebApp" which is a project for our Software Engineering course. 
             This project is about managing the lab in our campus, we use React for the frontend and Next for the app route.
-          </p>
+        </p>
         </div>
         
       </div>

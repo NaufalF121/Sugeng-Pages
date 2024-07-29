@@ -15,7 +15,7 @@ export default defineNuxtConfig({
     '@primevue/nuxt-module'
     
   ],
-  ssr: true,
+  ssr: false,
   tailwindcss: {
     configPath: 'tailwind.config.js',
     exposeConfig: true
