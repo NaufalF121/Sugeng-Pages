@@ -2,8 +2,8 @@
 title: 'The Legacy of the Panzer Division: A Historical Overview'
 description: "The Panzer Division, pivotal in World War II, epitomized Germany's innovative approach to mechanized warfare. Organized around tanks, mechanized infantry, and artillery, these units spearheaded Blitzkrieg tactics, showcasing speed and firepower in decisive campaigns like the Battle of France. Despite their controversial legacy, Panzer Divisions revolutionized military strategy, leaving an indelible mark on the history and evolution of armored warfare worldwide."
 date: '12/07/2024'
-slug: 'second'
-thumb: '/blog/first/thumb.jpeg'
+slug: 'panzer-division-histories'
+thumb: '/blog/second/panzer.webp'
 ---
 
 ::Article
