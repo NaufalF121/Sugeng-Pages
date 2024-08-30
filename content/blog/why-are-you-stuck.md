@@ -1,7 +1,7 @@
 ---
 title: 'Unstuck when learning some concept'
 description: 'Feeling stuck when studying something? maybe you miss some point of requirement, you just need to find that lost piece. '
-date: '12/07/2024'
+date: '30/08/2024'
 slug: 'why-are-you-stuck'
 thumb: '/blog/first/thumb.jpeg'
 ---
