@@ -3,7 +3,7 @@ const { slug } = useRoute().params;
 </script>
 
 <template>
-  <article class="bg-inherit rounded-2xl min-h-dvh w-full flex justify-center">
+  <article class="bg-inherit rounded-2xl min-h-dvh w-full flex justify-center mb-20 mt-10">
     <div class="w-full flex flex-col items-center">
       <ContentDoc :path="`/blog/${slug}`" v-slot="{ doc }" class="flex flex-col items-center w-full">
        
@@ -29,5 +29,7 @@ const { slug } = useRoute().params;
       </ContentDoc>
     </div>
   </article>
+
+
 </template>
 

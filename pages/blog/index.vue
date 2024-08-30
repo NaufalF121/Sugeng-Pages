@@ -31,7 +31,7 @@
                 <div v-for="blog in list" :key="blog._path" class="bg-white hover:shadow-md p-4 w-full rounded-md flex lg:flex-row flex-col-reverse">
                     <div class="mt-5 lg:mt-0 lg:mr-5 gap-2 lg:w-2/3 w-full">
                         <h2 class="text-xl font-bold line-clamp-3 lg:line-clamp-5">{{ blog.title }}</h2>
-                        <p class="text-gray-500 line-clamp-3 lg:line-clamp-5 text-justify">{{ blog.description }}</p>
+                        <p class="text-gray-500 line-clamp-3 lg:line-clamp-5 text-justify h-32">{{ blog.description }}</p>
                         <p class="text-gray-500">{{ blog.date }}</p>
                         <NuxtLink :to="`/blog/${blog.slug}`" class="text-blue-500">Read more</NuxtLink>
                     </div>
