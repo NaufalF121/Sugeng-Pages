@@ -8,6 +8,7 @@
   body {
     -ms-overflow-style: none;  /* IE and Edge */
     scrollbar-width: none;  /* Firefox */
+    overflow: hidden;
   }
 </style>
 

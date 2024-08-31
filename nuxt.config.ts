@@ -42,6 +42,7 @@ export default defineNuxtConfig({
         indexed: true
       }
     },
+
     // sources: {
     //   blog: {
     //     type: 'markdown',
