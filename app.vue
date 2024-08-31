@@ -8,7 +8,7 @@
   body {
     -ms-overflow-style: none;  /* IE and Edge */
     scrollbar-width: none;  /* Firefox */
-    overflow: hidden;
+    overflow: auto;
   }
 </style>
 
@@ -19,7 +19,7 @@
       <Title>{{ "Naufal Farras Pratama" }}</Title>
       <Meta name="description" :content="'This Website telling about myself as programmer'" />
   </Head>
-  <div class="flex flex-col bg-slate-200 justify-center items-center">
+  <div class="flex flex-col bg-slate-200 justify-center items-center w-full">
     
     <Header/>
     <NuxtPage :page-key="route => route.fullPath" />
