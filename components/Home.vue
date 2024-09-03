@@ -1,59 +1,22 @@
 <script>
+import TypeIt from 'typeit';
+const colors = ["bg-clip-text text-transparent bg-gradient-to-bl from-yamada-light to-nijika ", "bg-clip-text text-transparent bg-gradient-to-bl from-ikuyo to-hitori", "bg-gradient-to-bl from-hitori to-yamada-light bg-clip-text text-transparent"],
+colorIndex = 0;
 export default {
-    data() {
-        return {
-            i: 0,
-            j: 0,
-            txt: ["Software", "Data", "AI"],
-            speed: 200,
-            color: ["bg-clip-text text-transparent bg-gradient-to-bl from-yamada-light to-nijika ", "bg-clip-text text-transparent bg-gradient-to-bl from-ikuyo to-hitori", "bg-gradient-to-bl from-hitori to-yamada-light bg-clip-text text-transparent"],
-        };
-    },
-    methods: {
-        deleteWriter() {
-            const element = document.getElementById("name");
-            if (!element) {
-                console.log("Element not found");
-                return;
-            }
-            if (this.j >= 0) {
-                element.innerHTML = element
-                    .innerHTML.slice(0, -1);
-                this.j--;
-                setTimeout(this.deleteWriter, this.speed);
-            } else {
-                this.j = 0;
-                if (this.i === this.txt.length - 1) {
-                    this.i = 0;
-                } else {
-                    this.i++;
-                }
-                
-                setTimeout(this.typeWriter, this.speed);
-            }
-        },
-        typeWriter() {
-            const element = document.getElementById("name");
-            if (!element) {
-                console.log("Element not found");
-                return;
-            }
-            if (this.j < this.txt[this.i].length) {
-                element.innerHTML += this.txt[this.i].charAt(
-                    this.j
-                );
-                element.className = this.color[this.i];
-                this.j++;
-                setTimeout(this.typeWriter, this.speed);
-            } else {
-                setTimeout(this.deleteWriter, this.speed);
-            }
-        },
-    },
     mounted() {
-        this.typeWriter();
+        
+        new TypeIt('#interest', {
+            speed: 100,
+            waitUntilVisible: true,
+            loop: true,
+        }).type('<span class="bg-clip-text text-transparent bg-gradient-to-bl from-yamada-light to-nijika "> Software</span>')
+        .pause(1000).delete(8)
+        .type('<span class="bg-clip-text text-transparent bg-gradient-to-bl from-ikuyo to-hitori"> AI</span>')
+        .pause(1000).delete(2)
+        .type('<span class="bg-gradient-to-bl from-hitori to-yamada-light bg-clip-text text-transparent"> Data</span>')
+        .pause(1000).delete(4).go();
     },
-};
+}
 </script>
 
 <template>
@@ -73,7 +36,7 @@ export default {
 
             <div class="flex flex-col w-full justify-center items-center gap-5 static">
                 <h1 class="lg:text-6xl text-3xl font-mono font-bold">Sugeng.cpp here !🍀</h1>
-                <h2 class="lg:text-3xl text-lg font-mono ">Interested in <span id="name"></span></h2>
+                <h2 class="lg:text-3xl text-lg font-mono " id="interest">Interested in </h2>
                 <div class="cursor-pointer rounded-lg border-2 border-gray-800 p-1 hover:text-gray-100 hover:bg-gray-800"> 
                     <a class="font-mono font-bold" href="mailto:blueshoko@gmail.com">Contact Me</a>
                 </div>

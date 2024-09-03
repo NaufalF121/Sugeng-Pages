@@ -17,6 +17,7 @@
     "nuxt-swiper": "^1.2.2",
     "primeicons": "^7.0.0",
     "primevue": "^4.0.0",
+    "typeit": "^8.8.4",
     "vue": "^3.4.21",
     "vue-router": "^4.3.0"
   },
