@@ -1,4 +1,6 @@
 <script lang="ts" setup>
+
+
 const { slug } = useRoute().params;
 </script>
 
