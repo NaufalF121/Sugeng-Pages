@@ -9,7 +9,7 @@ const { slug } = useRoute().params;
        
         <div class="flex flex-col items-center w-full">
           <div class="text-center p-5">
-            <h1 class="text-3xl font-bold lg:w-2/3 mx-auto">{{ doc.title }}</h1>
+            <h1 class="text-3xl font-bold lg:w-2/3 mx-auto font-mono">{{ doc.title }}</h1>
             <p class="text-gray-500 text-sm mt-2">{{ doc.date }}</p>
           </div>
           <NuxtImg
