@@ -7,6 +7,9 @@
             <NuxtLink to="/blog" class="text-black font-mono">Blog</NuxtLink>
         </div>
         <div class="pr-2 pl-2 rounded-md bg-transparent hover:bg-gray-500">
+            <NuxtLink to="/project" class="text-black font-mono">Projects</NuxtLink>
+        </div>
+        <div class="pr-2 pl-2 rounded-md bg-transparent hover:bg-gray-500">
             <NuxtLink to="/about" class="text-black font-mono">More</NuxtLink>
         </div>
     
